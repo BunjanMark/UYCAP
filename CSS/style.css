@@ -30,6 +30,8 @@ nav {
 	transition: all 0.3s ease;
 	height: 80px;
 	width: 80px;
+	position: relative;
+	top: -10px;
 }
 /* Styling logo */
 
@@ -648,8 +650,10 @@ main {
 	width: calc(250px * 14);
 }
 .logo-slider .slide {
-	height: 100px;
+	height: 450px;
 	width: 250px;
+	align-items: center;
+	justify-content: center;
 }
 
 @-webkit-keyframes logo-scroll {
@@ -692,6 +696,7 @@ main {
 .row-header span {
 	border-bottom: 1px solid #000;
 }
+
 /* ROW - 1 */
 
 .row-1 {
@@ -834,7 +839,7 @@ main {
 	/* ease-out */
 	width: 660px;
 	height: 100%;
-	background-color: #3f96cd;
+	background-color: #cd3f3f;
 	position: absolute;
 	left: -659px;
 }
@@ -982,6 +987,7 @@ main {
 .SS18-container {
 	height: 100%;
 	overflow: auto;
+	width: 100%;
 }
 
 #SS18-anchor {
@@ -1037,7 +1043,7 @@ main {
 	font-weight: 300;
 	letter-spacing: 0.1vw;
 	text-transform: uppercase;
-	margin-top: 3vh;
+
 	font-family: "Open Sans", sans-serif;
 }
 
@@ -1137,6 +1143,13 @@ main {
 		text-transform: uppercase;
 		font-family: "Open Sans", sans-serif;
 	}
+}
+.cta4 {
+	background-color: red;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 /*  */
