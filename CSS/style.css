@@ -419,7 +419,7 @@ nav li a {
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
-h1 {
+#headers h1 {
 	color: #fff;
 	font-size: 240%;
 	word-spacing: 5px;
@@ -454,27 +454,6 @@ h1 {
 }
 .btn-nav:hover {
 	background: #c74343;
-}
-.effect {
-	animation: effect 1s infinite;
-}
-
-@keyframes effect {
-	0% {
-		color: green;
-	}
-	25% {
-		color: pink;
-	}
-	50% {
-		color: white;
-	}
-	75% {
-		color: rgb(182, 66, 66);
-	}
-	100% {
-		color: grey;
-	}
 }
 
 .mobile-icon {
