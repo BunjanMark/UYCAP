@@ -1,5 +1,5 @@
 body {
-	background-color: rgb(127, 127, 127);
+	background-color: rgb(255, 255, 255);
 }
 
 * {
@@ -413,11 +413,14 @@ nav li a {
 }
 
 .main-content-header {
-	width: 1180px;
+	width: 80%;
 	position: absolute;
-	top: 50%;
+	top: 67%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	backdrop-filter: blur(10px) brightness(120%) contrast(80%) opacity(90%);
+	background-color: rgba(46, 19, 19, 0.5);
+	border-radius: 12px;
 }
 #headers h1 {
 	color: #fff;
@@ -443,7 +446,9 @@ nav li a {
 	color: #ff3d3d;
 	margin-right: 15px;
 	border: 1px solid #cf4040;
+	margin-top: 10px;
 }
+
 .btn-full:hover {
 	background-color: #fff;
 }
@@ -451,6 +456,7 @@ nav li a {
 	background-color: transparent;
 	color: white;
 	border: 1px solid #fff;
+	margin-top: 10px;
 }
 .btn-nav:hover {
 	background: #c74343;
@@ -482,9 +488,42 @@ nav li a {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+/* Default styles for header */
+#headers {
+	padding: 55px 35px;
+}
 
-/*	You can add this class in old browsers to remove bg image  */
+/* Styles for header on smaller screens */
+@media screen and (max-width: 768px) {
+	#headers {
+		padding: 20px;
+	}
 
+	h1 {
+		font-size: 24px;
+	}
+
+	.btn {
+		font-size: 14px;
+	}
+}
+
+/* Styles for header on even smaller screens */
+@media screen and (max-width: 480px) {
+	#headers {
+		padding: 10px;
+	}
+
+	h1 {
+		font-size: 20px;
+	}
+
+	.btn {
+		font-size: 12px;
+	}
+}
+
+/* Removes background Image */
 .noBgImage {
 	background-image: none;
 }
@@ -541,7 +580,7 @@ nav li a {
 
 /* Heading */
 .content-header {
-	background-color: rgba(0, 0, 0, 0);
+	background-color: rgba(78, 21, 21, 0);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -557,6 +596,7 @@ nav li a {
 main {
 	background-color: gainsboro;
 }
+/* Slider */
 .logo-slider {
 	display: inline-block;
 	background: rgba(146, 146, 146, 0.887);
@@ -634,6 +674,24 @@ main {
 	}
 }
 
+/* Row header */
+.row-header {
+	height: 100px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.row-header h1 {
+	font-size: 2vw;
+	font-weight: 300;
+	letter-spacing: 0.3vw;
+	text-transform: uppercase;
+	font-family: "Open Sans", sans-serif;
+}
+.row-header span {
+	border-bottom: 1px solid #000;
+}
 /* ROW - 1 */
 
 .row-1 {
@@ -911,6 +969,174 @@ main {
 	letter-spacing: 0.045em;
 	text-transform: uppercase;
 	white-space: nowrap;
+}
+/*  */
+/*  */
+/*  */
+/* ENDD */
+
+/* PRODUCT FLEX */
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600");
+
+.SS18-container {
+	height: 100%;
+	overflow: auto;
+}
+
+#SS18-anchor {
+	overflow: hidden;
+	display: inline-block;
+	width: calc(33.33% - 1.0416666666666667vw);
+	max-width: 620px;
+	height: auto;
+	float: left;
+}
+
+.SS18-first {
+	margin-top: 0.78125vw;
+	margin-bottom: 0.78125vw;
+	margin-left: 0.78125vw;
+	margin-right: 0.36458333333333337vw;
+}
+
+.SS18-second {
+	margin-top: 0.78125vw;
+	margin-bottom: 0.78125vw;
+	margin-left: 0.36458333333333337vw;
+	margin-right: 0.36458333333333337vw;
+}
+
+.SS18-third {
+	margin-top: 0.78125vw;
+	margin-bottom: 0.78125vw;
+	margin-left: 0.36458333333333337vw;
+	margin-right: 0.78125vw;
+}
+
+.SS18-caption h1 {
+	font-size: 2vw;
+	font-weight: 300;
+	line-height: 1vw;
+	color: #ffffff;
+	letter-spacing: 0.1vw;
+	text-transform: uppercase;
+	font-family: "Open Sans", sans-serif;
+}
+
+.SS18-caption h4 {
+	font-size: 1vw;
+	font-weight: 300;
+	letter-spacing: 0.1vw;
+	text-transform: uppercase;
+	font-family: "Open Sans", sans-serif;
+}
+
+.SS18-caption h5 {
+	font-size: 1vw;
+	font-weight: 300;
+	letter-spacing: 0.1vw;
+	text-transform: uppercase;
+	margin-top: 3vh;
+	font-family: "Open Sans", sans-serif;
+}
+
+.SS18-container figure {
+	position: relative;
+	background-color: #000;
+}
+
+.SS18-figureimg {
+	width: 100%;
+	display: block;
+	position: relative;
+}
+
+.SS18-container figcaption {
+	position: absolute;
+	top: 35%;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	opacity: 0;
+	color: #fff;
+}
+
+.SS18-figureimg {
+	opacity: 1;
+	-webkit-transition: all 0.8s ease;
+	-moz-transition: all 0.8s ease;
+	transition: all 0.8s ease;
+}
+
+.SS18-container figure figcaption {
+	opacity: 1;
+}
+
+#SS18-anchor:hover .SS18-figureimg {
+	transform: scale(1.15);
+	opacity: 0.4;
+	-webkit-transition: all 0.8s ease;
+	-moz-transition: all 0.8s ease;
+	transition: all 0.8s ease;
+}
+
+.SS18-figure {
+	margin: 0;
+}
+
+@media only screen and (max-width: 480px) {
+	#SS18-anchor {
+		display: block;
+		width: calc(100% - 6.25vw);
+	}
+
+	.SS18-first {
+		margin-left: 3.125vw;
+		margin-right: 3.125vw;
+		margin-top: 3.125vw;
+		margin-bottom: 1.4583333333333335vw;
+	}
+
+	.SS18-second {
+		margin-left: 3.125vw;
+		margin-right: 3.125vw;
+		margin-top: 1.4583333333333335vw;
+		margin-bottom: 1.4583333333333335vw;
+	}
+
+	.SS18-third {
+		margin-left: 3.125vw;
+		margin-right: 3.125vw;
+		margin-top: 1.4583333333333335vw;
+		margin-bottom: 3.125vw;
+	}
+
+	.SS18-caption h1 {
+		font-size: 6vw;
+		font-weight: 300;
+		line-height: 3vw;
+		letter-spacing: 0.3vw;
+		text-transform: uppercase;
+		font-family: "Open Sans", sans-serif;
+	}
+
+	.SS18-caption h4 {
+		font-size: 3vw;
+		font-weight: 300;
+		letter-spacing: 0.3vw;
+		text-transform: uppercase;
+		font-family: "Open Sans", sans-serif;
+	}
+
+	.SS18-caption h5 {
+		font-size: 2vw;
+		font-weight: 300;
+		letter-spacing: 0.3vw;
+		margin-top: 50vw;
+		text-transform: uppercase;
+		font-family: "Open Sans", sans-serif;
+	}
 }
 
 /*  */
