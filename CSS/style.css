@@ -369,7 +369,165 @@ nav li a {
 		background-color: rgb(255, 255, 255);
 	}
 }
+/*  */
+/* Banner test */
 
+.clearfix:after {
+	content: ".";
+	visibility: hidden;
+	display: block;
+	height: 0px;
+	clear: both;
+}
+.row {
+	max-width: 1180px;
+	margin: 0 auto;
+}
+.logo {
+	height: 80px;
+	width: auto;
+	float: left;
+	margin-top: 20px;
+}
+
+.main-nav {
+	float: right;
+	margin-top: 60px;
+}
+.main-nav li {
+	display: inline-block;
+	list-style: none;
+	margin-left: 40px;
+}
+.main-nav li a {
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 90%;
+	font-weight: 100;
+	padding: 50x 0;
+}
+.main-nav li a:hover {
+	border-bottom: 1px solid #bf55ec;
+	border-width: 3px;
+}
+
+.main-content-header {
+	width: 1180px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+h1 {
+	color: #fff;
+	font-size: 240%;
+	word-spacing: 5px;
+	letter-spacing: 3px;
+	margin-bottom: 20px;
+
+	font-weight: lighter;
+}
+.btn {
+	display: inline-block;
+	padding: 10px 30px;
+	font-weight: lighter;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 200px;
+	transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full {
+	background-color: transparent;
+	color: #ff3d3d;
+	margin-right: 15px;
+	border: 1px solid #cf4040;
+}
+.btn-full:hover {
+	background-color: #fff;
+}
+.btn-nav {
+	background-color: transparent;
+	color: white;
+	border: 1px solid #fff;
+}
+.btn-nav:hover {
+	background: #c74343;
+}
+.effect {
+	animation: effect 1s infinite;
+}
+
+@keyframes effect {
+	0% {
+		color: green;
+	}
+	25% {
+		color: pink;
+	}
+	50% {
+		color: white;
+	}
+	75% {
+		color: rgb(182, 66, 66);
+	}
+	100% {
+		color: grey;
+	}
+}
+
+.mobile-icon {
+	display: none;
+}
+
+.header {
+	color: #c7d63c;
+	background-image: linear-gradient(
+		90deg,
+		#6e40aa,
+		#963db3,
+		#bf3caf,
+		#e3419e,
+		#fe4b83,
+		#ff5e64,
+		#ff7747,
+		#fb9633,
+		#e2b72f,
+		#c7d63c,
+		#c7d63c
+	);
+	background-position: 100% 0;
+	background-size: 500% 100%;
+	transition: background-position 1s linear;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+/*	You can add this class in old browsers to remove bg image  */
+
+.noBgImage {
+	background-image: none;
+}
+
+.animated {
+	animation: 1.75s linear 0s infinite alternate both running textGradient;
+}
+
+.transitioned:hover {
+	background-position: 0 0;
+}
+
+@keyframes textGradient {
+	from {
+		background-position: 100% 0;
+	}
+	to {
+		background-position: 0% 0;
+	}
+}
+
+/* END */
 /* Styles for larger screens */
 
 .banner {
